@@ -9,6 +9,9 @@ docsを自動で作成可能で早い。
 自動でadminサイトを作成できる。
 セキュア
 
+### SECRET_KEY
+setting.pyで設定する。設定しなければエラーになる。githubにあげてはいけないので、ローカルのファイルを読むか環境変数にする。ファイルはアプリ内ではなく、manage.pyと同じ場所に配置する。
+
 ### CSRFの検証
 settings.pyに記載されている'django.middleware.csrf.CsrfViewMiddleware'によってCSRF検証機能が存在する。
 POSTメソッドのフォームには、csrf_tokenタグを入れればOKです。
