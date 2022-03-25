@@ -1,14 +1,19 @@
-## fastapi
-### 概要
+# fastapi
+## 概要
 docsを自動で作成可能で早い。
 `uvicorn`によってアプリを起動する
 
 
-## django
-### 概要
+# django
+## 概要
 自動でadminサイトを作成できる。
 セキュア
+### Serializer
 
+## View
+django_filter
+
+##セキュリティ
 ### SECRET_KEY
 setting.pyで設定する。設定しなければエラーになる。githubにあげてはいけないので、ローカルのファイルを読むか環境変数にする。ファイルはアプリ内ではなく、manage.pyと同じ場所に配置する。
 
