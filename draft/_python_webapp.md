@@ -14,6 +14,7 @@ fields = '__all__'で全てのカラム、excludeで用いないカラム
 
 ## View
 django_filter(pp.194)
+
 ### 複数モデルを使用する場合(DRF)
 https://jpcodeqa.com/q/c1321bd3cc5ddf274e68270ac492be78
 ```
@@ -46,7 +47,11 @@ POSTメソッドのフォームには、csrf_tokenタグを入れればOKです�
 注意点として、外部のURLに対してPOSTするフォームにはこの{% csrf_token %}タグを使ってはいけません。CSRFトークンが外部にもれることになり、セキュリティ上よくないからです。(https://djangobrothers.com/blogs/django_csrf/)
 
 ## shell
-django-
+django-extensionsを事前にinstallし、setting.pyのINSTALLED APPSに'django_extensions'を追記する。
+```
+% python manage.py shell_plus
+%
+```
 
 ### 参考サイト
 - https://djangobrothers.com/blogs/
