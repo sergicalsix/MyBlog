@@ -33,6 +33,7 @@ class TimeLineList(generics.ListAPIView):
         return list(itertools.chain(Tweet.objects.all(), Article.objects.all()))
 ```
 ## API仕様書
+自動生成
 
 ## セキュリティ
 ### SECRET_KEY
